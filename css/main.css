@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+h1 {
+    font-size: 3.5em;}
+    h2 {font-size: 2.7em;}
+    h3{font-size: 2em;}
+    p{font-size: 1.25em;}
+    ul{list-style: none;}
+    
+    button{ 
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 3px solid black;
+        box-shadow: 6px 2px 10px black;
+        color: blueviolet;
+        background-color: rgb(0, 0, 0);
+    
+    }
+    button:hover{
+        background-color: rgb(240, 240, 240);
+    }
+    
+    .continer{
+        max-width: 2000px;
+        margin: auto;
+    }
+    header {
+        background-image:url(../img/fond.jpg) ;
+        background-repeat: no-repeat;
+        
+    }
+    .int {
+        max-width: 100px;
+        padding: 20px 12px;
+        
+    }
+    
+    header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: blueviolet;
+        font-size: 1.8em
+    }
+    header .continer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    header a{
+        
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    
+    }
+    header a:hover{
+        color: blueviolet;
+    }
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        color: rgb(255, 255, 255);
+        
+        background-image:linear-gradient(
+            0deg,
+            rgba(0, 0, 1, 0),
+            rgba(0, 0, 1, 0.925)
+            ) 
+            , url('../img/hero2.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;   
+    }
+    
+    #hero h1{
+        color: white;}
+    #hero button{
+        font-size: 1.8em;
+    }
+    main{
+      background-color: rgb(30,30,30);
+    }
+    #somos-moto .continer{
+        text-align: center;
+        padding:150px 12px ;
+        
+}
+#somos-moto h2{
+  color: aliceblue;
+}
+#somos-moto p{
+  color: aliceblue;
+}
+.color-viole{
+  color: blueviolet;
+}
+
+#recomendaciones{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;}
+
+#recomendaciones .continer{
+     padding: 150px 12px;
+}
+#recomendaciones h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#recomendaciones p{
+    display: none;
+}
+#recomendaciones .carta{
+   background-position:center center ;
+   background-size: cover;
+   padding: 50px;
+   margin: 20px;
+   border-radius: 13px;
+   color: rgb(255, 255, 255);
+  
+}
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 1, 0),
+        rgba(0, 0, 1, 0.925)
+        ) 
+        ,url(../img/kawasaki-ninja.webp);
+    
+    }
+.carta:nth-child(2){
+background-image:linear-gradient(
+     0deg,
+     rgba(0, 0, 1, 0),
+     rgba(0, 0, 1, 0.925)
+      ) 
+     ,url(../img/caer-moto-seguridad.jpeg);
+}
+    
+.carta:nth-child(3){
+        
+background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 1, 0),
+            rgba(0, 0, 1, 0.925)
+            ) 
+            ,url(../img/tipos.jpg);
+}
+#variedad{
+    background-color: rgb(30,30,30);;
+  }
+  #variedad .continer{
+    
+      text-align: center;
+      padding: 250px 12px;
+  }
+  #variedad li{
+    color: aliceblue;
+  margin: 15px 0px;
+  font-weight: bold;
+  }
+  #variedad .lis{
+    padding-left: 1em;
+  }
+  #aprende-ya{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background-color: rgb(30,30,30);
+      color: rgb(255, 255, 255);
+      height: 80vh;
+  
+  }
+  #aprende-ya h2{
+      font-size: 9vw;
+  }
+  #aprende-ya button{
+      font-size: 5vw;
+  }
+  footer{
+    background-color: rgb(122, 119, 124);
+    background-size: cover;
+  }
+  
+  footer p{
+      margin: 0;
+      padding: 12px;
+      
+  }
+  footer .continer{
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      
+  }
+  
+  @media (max-width: 890px){
+    #recomendaciones .contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+
+  @media (max-width: 920px)  {
+    #variedad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        
+    }
+    #variedad li{
+        color: black;
+    }
+
+
+  }
+
+  @media (max-width: 720px)  {
+
+    #variedad li{
+        color: aliceblue;}
+    }
+  @media (min-width: 720px){
+
+    header .continer{
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 1.4em;
+    }
+  
+    header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+      
+    }
+    
+    header p{
+      font-size: 4em;
+    }
+    .logo{
+        font-size: 5em;
+      }
+      
+      
+    
+      #hero h1{
+        font-size: 5em;
+      }
+    
+      #somos-moto .continer{
+        display:flex ;
+        justify-content:space-evenly;
+    
+      }
+      #somos-moto .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #somos-moto .img-continer{
+        background-image:url(../img/somosmotos.webp);
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 400px;
+      }
+      #recomendaciones .contenido{
+  
+        display: flex;
+        justify-content: center;
+      }
+      #recomendaciones p{
+        display: block;
+        margin-bottom: 30px;
+      }
+    
+      #recomendaciones h3{
+        margin-top: 0;}
+        #recomendaciones .carta{
+  
+            padding: 50px;
+            background-repeat: no-repeat;
+            box-shadow: 2px 2px 10px blueviolet;
+            
+          }
+          #variedad{
+            background-image: url(../img/variedad.jpg);
+            background-repeat: no-repeat;
+            background-size: 500px 300px;
+        background-position: calc(100vw - 700px) 120px;
+        
+          }
+        
+        
+          #variedad .continer{
+          
+            text-align: initial;
+          }
+
+
+          #aprende-ya h2{
+            font-size: 5em;
+          }
+          #aprende-ya button{
+            font-size: 2em;
+        }
+        
+        footer { 
+          display: flex;
+          justify-content: end;
+          
+        }
+    }
+        @media (min-width:1200px) {
+            #variedad{
+                  background-position: calc(100vw - 800px);
+                  font-size: 2em;
+                  background-color: rgb(30,30,30);
+              }
+        
+        
+
+
+}
+
+
+.contactos{
+    background-image: url(../img/header1.jpg);
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(255, 248, 248);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+
+
+}
+.grupos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    
+}
+.contacto-inicio{
+    color: blueviolet;
+    font-size: 50px;
+}
+label{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.178);
+    border: 2px solid rgb(0, 0, 0);
+    color: blueviolet;
+    outline: none;
+}
+input::placeholder,textarea{
+    color: blueviolet;
+}
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.form-txt a{
+    color: blueviolet;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn{
+font-size: 16px;
+color: blueviolet;
+border: 0;
+border-radius: 25px;
+background-color:rgba(0, 0, 0, 0.178);
+box-shadow: 0 0 20px rebeccapurple;
+}
+.btn:hover{
+    background-color: rgba(137, 43, 226, 0.397);
+}
+.volver{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/black-perforated-background-with-black-holes-vector.jpg);
+   align-items: center;
+   
+   
+}
+.logo-7{
+    width: 10em;
+}
+.moto-contacto{
+    display: flex;
+    align-items: end;
+    font-size: 50px;
+    margin-left: 1200px;
+    text-decoration: none;
+    font-weight: 600;
+    color: blueviolet;
+
+}
+/*nosotros*/
+ 
+    
+
+.container{ 
+   
+
+    margin: auto;
+    
+    justify-content: center;
+  
+    
+
+}
+.banner_text{
+    color: blueviolet;
+}
+.text{
+    color: white;
+}
+
+
+
+.us-rs-title{
+    font-family: 'roboto' sans-serif;
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bold;
+
+}
+.section_2-title {
+    font-family: 'roboto' sans-serif;
+    font-size: 40px;
+    color: blueviolet;
+    font-weight: bold;
+    
+
+}
+.section_2{
+   
+    width: 74%;
+    margin: auto;
+    padding: 100px 0;
+
+}
+
+    
+    
+
+
+
+
+.us-rs{
+   
+    padding-top: 20px;
+margin: 20px 0;
+
+
+
+        
+ }
+.us-paragraph{
+  
+font-family: 'roboto' sans-serif;
+ font-size: 18px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding-top: 30px;}
+
+.us-text{
+    margin: 0;
+}
+
+
+.variedaddd{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 1, 0),
+        rgba(0, 0, 1, 0.925)
+        ) 
+        , url(../img/varie.jpg);
+}
+variedades
+.red{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.fay{
+   max-width: 25px;
+}
+.tub{
+    max-width: 25px;
+ }
+ .inta{
+    max-width: 25px;
+ }
+ @media( max-width:1180px ){
+
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+ }
+
+
+ .varea{
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family:Germania One ;
+    font-weight: 400;
+    color: blueviolet;
+  
+ }
+
+
+
+
+
+
+
+
+
+
+.d-item{
+    height: 600px;
+    
+   
+ }
+.d-img{
+    height: 100%;
+    filter: brightness(0.6);
+}
+.carousel-control-prev:hover{
+    background-color: rgba(0, 255, 255, 0);
+
+}
+.carousel-control-next:hover{
+    background-color: rgba(0, 255, 255, 0);
+
+}
+
+ 
+
+
+
