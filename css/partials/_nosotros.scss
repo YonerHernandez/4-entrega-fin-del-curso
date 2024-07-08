@@ -2,10 +2,13 @@
     background-color:$contacto;
     border-radius: 10px 10px;
     box-shadow: 0 1px 4px 
+    
 }
+
 .banner_text{
     font-family: 'roboto' sans-serif;
     color: $mainColor;
+    
 
     .banner_title-1{
         font-weight: bold;
@@ -15,7 +18,7 @@
         font-weight: bold;
     }
     .text{
-        color: white;
+        color: $tercerColor;
         padding-top: 10px;
         font-size: 1.5em;
     }
@@ -26,6 +29,8 @@
     width: 74%;
     margin: auto;
     padding: 30px 0;
+    font-size: 0.8em;
+
 
     .section_2-title {
         font-family:$fontEater;
@@ -41,8 +46,7 @@
     .us-paragraph{
   
         font-family: 'roboto' sans-serif;
-         font-size: 18px;
-        color: rgb(255, 255, 255);
+        color: $segundoColore;
         text-align: center;
         padding-top: 30px;}
         
