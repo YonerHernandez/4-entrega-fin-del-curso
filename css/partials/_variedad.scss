@@ -1,0 +1,23 @@
+.sombreado-3{
+  background-color:$contacto;
+  border-radius: 10px 10px;
+  box-shadow: 0 1px 4px 
+}
+#variedad{
+    background-color: $colorFondo;
+    .continer{
+    
+        text-align: center;
+        padding: 250px 12px;
+
+        li{
+            color: $cuartoColor;
+            margin: 15px 0px;
+            font-weight: bold;
+              }
+        }
+        .lis{
+            padding-left: 1em;
+          }
+    }
+  

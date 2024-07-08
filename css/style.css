@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Germania+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+button:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.continer {
+  max-width: 2000px;
+  margin: auto;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 3px solid black;
+  box-shadow: 6px 2px 10px black;
+  color: blueviolet;
+  background-color: rgb(0, 0, 0);
+}
+
+header {
+  background-image: url(../img/fond.jpg);
+  background-repeat: no-repeat;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+header a:hover {
+  animation: animate__shakeY 1s infinite;
+  color: blueviolet;
+}
+header .sombreado-1 {
+  background-color: rgba(134, 35, 226, 0.075);
+  border-radius: 10px 10px;
+  box-shadow: 0 1px 4px;
+}
+header .continer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .continer .int {
+  max-width: 100px;
+  padding: 20px 12px;
+}
+header .continer .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.8em;
+  font-family: Germania One;
+}
+header .continer .logo:hover {
+  animation: bounce-animation 1s infinite;
+}
+header .continer nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header .continer .red {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+header .continer .red .fay {
+  max-width: 25px;
+}
+header .continer .red .tub {
+  max-width: 25px;
+}
+header .continer .red .inta {
+  max-width: 25px;
+}
+
+@media (max-width: 1180px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(0deg, rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.925)), url("../img/hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero h1 {
+  color: white;
+}
+#hero #hero button {
+  font-size: 1.8em;
+}
+
+main {
+  background-color: rgb(30, 30, 30);
+}
+
+#somos-moto .continer {
+  text-align: center;
+  padding: 150px 12px;
+}
+#somos-moto .continer .separacion {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#somos-moto h2 {
+  color: aliceblue;
+}
+#somos-moto h2 .color-viole {
+  color: blueviolet;
+}
+
+#somos-moto p {
+  color: aliceblue;
+}
+
+#recomendaciones {
+  background-color: rgb(30, 30, 30);
+  text-align: center;
+  color: white;
+}
+#recomendaciones .continer {
+  padding: 150px 12px;
+}
+#recomendaciones .continer .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 13px;
+  color: rgb(255, 255, 255);
+}
+#recomendaciones .carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.925)), url(../img/kawasaki-ninja.webp);
+}
+#recomendaciones .carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.925)), url(../img/caer-moto-seguridad.jpeg);
+}
+#recomendaciones .carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.925)), url(../img/tipos.jpg);
+}
+
+#recomendaciones h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#recomendaciones p {
+  display: none;
+}
+
+.sombreado-3 {
+  background-color: rgba(134, 35, 226, 0.075);
+  border-radius: 10px 10px;
+  box-shadow: 0 1px 4px;
+}
+
+#variedad {
+  background-color: rgb(30, 30, 30);
+}
+#variedad .continer {
+  text-align: center;
+  padding: 250px 12px;
+}
+#variedad .continer li {
+  color: aliceblue;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+#variedad .lis {
+  padding-left: 1em;
+}
+
+#aprende-ya {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  height: 80vh;
+}
+#aprende-ya h2 {
+  font-size: 9vw;
+}
+#aprende-ya button {
+  font-size: 5vw;
+}
+
+footer {
+  background-color: rgb(122, 119, 124);
+  background-size: cover;
+}
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: black;
+}
+footer .continer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sombreado-4 {
+  background-color: rgba(134, 35, 226, 0.075);
+  border-radius: 10px 10px;
+  box-shadow: 0 1px 4px;
+}
+
+.contactos {
+  background-image: url(../img/header1.jpg);
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactos .contacto-inicio {
+  font-family: Germania One;
+  color: blueviolet;
+  font-size: 50px;
+}
+.contactos form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb(255, 248, 248);
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+}
+.contactos form .grupos {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contactos form .grupos label {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.contactos form .grupos input, .contactos form .grupos textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: rgba(134, 35, 226, 0.075);
+  border: 2px solid black;
+  color: aliceblue;
+  outline: none;
+}
+.contactos form .grupos input input::-moz-placeholder, .contactos form .grupos textarea input::-moz-placeholder {
+  color: aliceblue;
+}
+.contactos form .grupos input input::placeholder, .contactos form .grupos input textarea, .contactos form .grupos textarea input::placeholder, .contactos form .grupos textarea textarea {
+  color: aliceblue;
+}
+.contactos form .grupos .form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.contactos form .grupos .form-txt a {
+  color: blueviolet;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contactos form .grupos .btn {
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.178);
+  box-shadow: 0 0 20px rebeccapurple;
+}
+.contactos form .grupos .btn:hover {
+  background-color: rgba(137, 43, 226, 0.397);
+}
+
+.variedaddd {
+  background-image: linear-gradient(0deg, rgba(0, 0, 1, 0), rgba(0, 0, 1, 0.925)), url(../img/varie.jpg);
+}
+.variedaddd .varea {
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Germania One;
+  font-weight: 400;
+  color: blueviolet;
+}
+
+.sombreado {
+  background-color: rgba(134, 35, 226, 0.075);
+  border-radius: 10px 10px;
+  box-shadow: 0 1px 4px;
+}
+
+.cartas-1 {
+  background-color: rgba(122, 122, 122, 0.178);
+}
+
+.cartas-2 {
+  background-color: rgba(122, 122, 122, 0.178);
+}
+.cartas-2 .card-text {
+  font-size: 1.8em;
+}
+.cartas-2 .tilt {
+  font-size: 2.2em;
+  border-radius: 10px 5px;
+  background-color: rgba(134, 35, 226, 0.075);
+  box-shadow: 3px 4px;
+  font-weight: bold;
+}
+.cartas-2 .parra {
+  font-size: 1.5em;
+}
+.cartas-2 .lay {
+  display: flex;
+  flex-direction: initial;
+}
+
+.d-item {
+  height: 600px;
+}
+.d-item .d-img {
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.carousel-control-prev:hover {
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.carousel-control-next:hover {
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.sombreado-2 {
+  background-color: rgba(134, 35, 226, 0.075);
+  border-radius: 10px 10px;
+  box-shadow: 0 1px 4px;
+}
+
+.banner_text {
+  font-family: "roboto" sans-serif;
+  color: blueviolet;
+}
+.banner_text .banner_title-1 {
+  font-weight: bold;
+}
+.banner_text .banner_title-2 {
+  font-weight: bold;
+}
+.banner_text .text {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+
+.section_2 {
+  width: 74%;
+  margin: auto;
+  padding: 30px 0;
+}
+.section_2 .section_2-title {
+  font-family: Germania One;
+  font-size: 40px;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.us-text {
+  margin: 0;
+}
+.us-text .us-paragraph {
+  font-family: "roboto" sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 30px;
+}
+.us-text .us-rs {
+  padding-top: 20px;
+  margin: 20px 0;
+}
+.us-text .us-rs .us-rs-title {
+  font-weight: bold;
+}
+
+@media (max-width: 890px) {
+  #recomendaciones .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 920px) {
+  #variedad .continer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #variedad .continer li {
+    color: black;
+  }
+}
+@media (max-width: 720px) {
+  #variedad .continer li {
+    color: aliceblue;
+  }
+}
+@media (min-width: 720px) {
+  header .continer {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3em;
+  }
+  header .continer nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  header .continer .logo {
+    font-size: 3em;
+  }
+  #hero h1 {
+    font-size: 5em;
+  }
+  #hero button {
+    font-size: 2.5em;
+  }
+  #somos-moto .continer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #somos-moto .continer .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos-moto .continer .img-continer {
+    background-image: url(../img/somosmotos.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+  #recomendaciones .contenido {
+    display: flex;
+    justify-content: center;
+  }
+  #recomendaciones .contenido p {
+    display: block;
+    margin-bottom: 30px;
+  }
+  #recomendaciones .contenido h3 {
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
+  #recomendaciones .contenido .carta {
+    padding: 50px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px blueviolet;
+  }
+  #variedad {
+    background-image: url(../img/variedad.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+    background-position: calc(100vw - 700px) 120px;
+  }
+  #variedad .continer {
+    text-align: initial;
+    margin-left: 30px;
+  }
+  #aprende-ya h2 {
+    font-size: 5em;
+  }
+  #aprende-ya button {
+    font-size: 2em;
+  }
+  footer {
+    display: flex;
+    justify-content: end;
+  }
+}
+@media (max-width: 1320px) {
+  header .continer .logo {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1180px) {
+  header .continer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 980px) {
+  #variedad {
+    background-size: 400px 300px;
+    background-position: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */

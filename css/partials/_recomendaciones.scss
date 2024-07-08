@@ -1,0 +1,49 @@
+#recomendaciones{
+    background-color: $colorFondo;
+    text-align: center;
+    color: $tercerColor;
+    
+    .continer{
+        padding: 150px 12px;
+
+        .carta{
+            background-position:center center ;
+            background-size: cover;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 13px;
+            color: rgb(255, 255, 255);
+           
+         }
+   }
+   .carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 1, 0),
+        rgba(0, 0, 1, 0.925)
+        ) 
+        ,url(../img/kawasaki-ninja.webp);   
+}
+.carta:nth-child(2){
+    background-image:linear-gradient(
+         0deg,
+         rgba(0, 0, 1, 0),
+         rgba(0, 0, 1, 0.925)
+          ) 
+         ,url(../img/caer-moto-seguridad.jpeg);
+    }
+.carta:nth-child(3){
+    background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 1, 0),
+                  rgba(0, 0, 1, 0.925)
+                  ) 
+                  ,url(../img/tipos.jpg);
+      }
+}
+#recomendaciones h2{
+    margin-top: 0;
+    font-size: 3.2em;}
+
+#recomendaciones p{
+    display: none;}

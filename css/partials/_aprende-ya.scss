@@ -1,0 +1,17 @@
+#aprende-ya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: $colorFondo ;
+    color: $segundoColore;
+    height: 80vh;
+
+    h2{
+        font-size: 9vw;
+    }
+    button{
+        font-size: 5vw;
+    }
+}

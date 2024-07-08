@@ -1,0 +1,138 @@
+@media (max-width: 890px){
+
+#recomendaciones .contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+
+
+@media (max-width: 920px)  {
+    #variedad .continer {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        li{
+            color: black;
+        } 
+    }
+  }
+ @media (max-width: 720px)  {
+
+    #variedad .continer li{
+        color: aliceblue;}
+    }
+
+
+@media (min-width: 720px){
+
+header .continer{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3em;
+
+    nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        }
+    .logo{
+        font-size: 3em;
+      } 
+    }
+#hero h1{
+    font-size: 5em;
+      }
+#hero button{
+    font-size: 2.5em;
+    }
+#somos-moto .continer{
+    display:flex ;
+    justify-content:space-evenly;
+
+    .texto{width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;}
+    .img-continer{
+            background-image:url(../img/somosmotos.webp);
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 400px;
+          }
+    }
+
+#recomendaciones .contenido{
+  
+        display: flex;
+        justify-content: center;
+
+        p{
+            display: block;
+        margin-bottom: 30px;
+        }
+        h3{
+            margin-top: 0;
+            padding-bottom: 30px;}
+        .carta{
+        padding: 50px;
+        background-repeat: no-repeat;
+        box-shadow: 2px 2px 10px blueviolet;
+                      }
+      }
+ #variedad{
+        background-image: url(../img/variedad.jpg);
+        background-repeat: no-repeat;
+        background-size: 600px 300px;
+    background-position: calc(100vw - 700px) 120px;
+    
+    .continer{ 
+        
+       text-align: initial;
+        margin-left: 30px;
+      
+        
+      }
+      }
+      #aprende-ya h2{
+        font-size: 5em;
+      }
+      #aprende-ya button{
+        font-size: 2em;
+    }
+    footer { 
+        display: flex;
+        justify-content: end;
+        
+      }
+}
+    
+  
+ @media (max-width:1320px){
+        header .continer .logo {font-size: 2em;
+        }
+    }
+
+@media( max-width:1180px ){
+
+    header .continer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+ 
+     @media (max-width: 980px){
+        #variedad{
+            background-size: 400px 300px;
+            background-position: 300px ;
+        }
+      }

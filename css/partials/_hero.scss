@@ -1,0 +1,26 @@
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: $segundoColore;
+    
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 1, 0),
+        rgba(0, 0, 1, 0.925)
+        ) 
+        , url('../img/hero2.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center; 
+     
+     h1{
+        color:$tercerColor;}
+     
+    #hero button{
+        font-size: 1.8em;
+    }
+}

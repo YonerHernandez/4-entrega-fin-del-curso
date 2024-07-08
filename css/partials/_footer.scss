@@ -1,0 +1,16 @@
+footer{
+    background-color: rgb(122, 119, 124);
+    background-size: cover;
+    
+    p{
+        margin: 0;
+        padding: 12px;
+        color: $quintoColor;
+  }
+  .continer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+}

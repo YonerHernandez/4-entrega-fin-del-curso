@@ -1,0 +1,81 @@
+.sombreado-4{
+    background-color:$contacto;
+    border-radius: 10px 10px;
+    box-shadow: 0 1px 4px 
+}
+.contactos{
+    background-image: url(../img/header1.jpg);
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contacto-inicio{
+        font-family:$fontEater;
+        color: $mainColor;
+        font-size: 50px;
+    }
+
+    form{
+        padding: 50px 55px;
+        box-shadow: $bordeContacto;
+        border-radius: 20px;
+        text-align: center;
+        width: 500px;
+      .grupos{
+         display: flex;
+         flex-direction: column;
+         text-align: left;
+
+        label{
+           color:$cuartoColor;
+           font-size: 20px;
+           font-weight: 600;
+            margin-bottom: 15px;
+            }
+        input, textarea{
+           padding: 17px 25px;
+           border-radius: 25px;
+           margin-bottom: 20px;
+           background-color: $contacto;
+           border: 2px solid $quintoColor;
+           color:$cuartoColor;
+           outline: none;
+
+           input::placeholder,textarea{
+            color: $cuartoColor;
+        }
+           }   
+           .form-txt{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        a{
+
+            color: $mainColor;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+
+          
+        }
+        
+        }
+
+        .btn{
+            font-size: 16px;
+            color: $tercerColor;
+            border: 0;
+            border-radius: 25px;
+            background-color:rgba(0, 0, 0, 0.178);
+            box-shadow: 0 0 20px rebeccapurple;
+
+            }
+            .btn:hover{
+                background-color:$borde2
+            }
+        }
+    }
+}
