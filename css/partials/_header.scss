@@ -20,9 +20,7 @@ header {
     }
 
     .continer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center);
 
         .int {
             max-width: 100px;
@@ -50,25 +48,16 @@ header {
                 padding-bottom: 25px;
             }
             .red {
-                display: flex;
-                flex-direction: row;
-                text-align: center;
+                @include flex(row,center);
 
                 .fay{
                     max-width: 25px; }
                 .tub{
-                    max-width: 25px; }
+                    @extend .fay}
                 .inta{
-                max-width: 25px;}
+                    @extend .fay}
             } 
      }
     }
     
 
-@media( max-width:1180px )
-{
-    header nav{
-        display: flex;
-        flex-direction: column;
-    }
-     }

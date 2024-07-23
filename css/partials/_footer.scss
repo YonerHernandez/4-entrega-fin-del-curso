@@ -9,8 +9,6 @@ footer{
   }
   .continer{
     height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+   @include flex-2(flex-end,center);
 }
 }

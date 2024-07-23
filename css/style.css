@@ -94,23 +94,10 @@ header .continer nav {
 header .continer .red {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  align-items: center;
 }
-header .continer .red .fay {
+header .continer .red .fay, header .continer .red .inta, header .continer .red .tub {
   max-width: 25px;
-}
-header .continer .red .tub {
-  max-width: 25px;
-}
-header .continer .red .inta {
-  max-width: 25px;
-}
-
-@media (max-width: 1180px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-  }
 }
 #hero {
   display: flex;
@@ -242,8 +229,8 @@ footer p {
 footer .continer {
   height: 150px;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .sombreado-4 {
@@ -301,8 +288,8 @@ footer .continer {
 .contactos form .grupos .form-txt {
   margin-bottom: 30px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  text-align: center;
 }
 .contactos form .grupos .form-txt a {
   color: blueviolet;
@@ -391,10 +378,7 @@ footer .continer {
   font-family: "roboto" sans-serif;
   color: blueviolet;
 }
-.banner_text .banner_title-1 {
-  font-weight: bold;
-}
-.banner_text .banner_title-2 {
+.banner_text .banner_title-1, .banner_text .banner_title-2 {
   font-weight: bold;
 }
 .banner_text .text {
@@ -547,6 +531,10 @@ footer .continer {
   }
 }
 @media (max-width: 1180px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
   header .continer {
     display: flex;
     flex-direction: column;
@@ -564,8 +552,8 @@ footer .continer {
 @media (max-width: 830px) {
   #variedad .continer {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   #variedad .continer .texto {
     font-size: 1em;

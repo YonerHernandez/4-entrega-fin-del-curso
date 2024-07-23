@@ -7,9 +7,7 @@
     background-image: url(../img/header1.jpg);
     font-family: sans-serif;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @include flex-2(center,center);
 
     .contacto-inicio{
         font-family:$fontEater;
@@ -24,9 +22,9 @@
         text-align: center;
         width: 500px;
       .grupos{
-         display: flex;
-         flex-direction: column;
-         text-align: left;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
 
         label{
            color:$cuartoColor;
@@ -49,9 +47,7 @@
            }   
            .form-txt{
             margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
+           @include flex-2(center,space-between);
         a{
 
             color: $mainColor;

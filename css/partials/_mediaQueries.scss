@@ -2,7 +2,7 @@
  @media (max-width: 720px)  {
 
     #variedad .continer li{
-        color: aliceblue;}
+        color: $cuartoColor;}
     }
 
 
@@ -94,8 +94,6 @@ header .continer{
   
       }
 
-
-
       #aprende-ya h2{
         font-size: 5em;
       }
@@ -135,6 +133,13 @@ header .continer{
 
 @media( max-width:1180px ){
 
+   
+    header nav{
+        display: flex;
+        flex-direction: column;
+    }
+     
+
     header .continer{
         display: flex;
         flex-direction: column;
@@ -151,10 +156,7 @@ header .continer{
   }
   @media (max-width: 830px){
     #variedad .continer{
-        display:flex ;
-        justify-content: center;
-        align-items: center
-        ;
+        @include flex-2(center,center);
         .texto{
             font-size: 1em;
         }
